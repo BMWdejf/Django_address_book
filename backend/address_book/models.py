@@ -3,11 +3,11 @@ from django.db import models
 # Create your models here.
 
 class Address(models.Model):
-    fb_id = models.IntegerField()
+    fb_id = models.CharField()
     last_update = models.DateTimeField()
     kod = models.CharField()
     nazev = models.TextField()
-    ic = models.IntegerField(max_length=11)
+    ic = models.CharField(max_length=11)
     dic = models.CharField(max_length=13)
     ulice = models.CharField()
     mesto = models.CharField()
